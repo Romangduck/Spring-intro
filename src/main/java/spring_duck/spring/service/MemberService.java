@@ -2,12 +2,15 @@ package spring_duck.spring.service;
 
 
 
+import jakarta.transaction.Transactional;
 import spring_duck.spring.domain.Member;
 import spring_duck.spring.repository.MemberRepository;
 import spring_duck.spring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
+
+@Transactional
 public class MemberService {
 
     private MemberRepository memberRepository;
