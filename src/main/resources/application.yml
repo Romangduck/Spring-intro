@@ -7,19 +7,17 @@ spring:
       enabled: true
       additional-exclude: static/**,public/**
 
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/mydb
-#    username: myuser
-#    password: mypass
-#    driver-class-name: com.mysql.cj.jdbc.Driver
 
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
-#    properties:
-#      hibernate:
-#        format_sql: true
+  datasource:
+    url: jdbc:h2:tcp://192.168.0.254/~/test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
 
   thymeleaf:
     cache: false
